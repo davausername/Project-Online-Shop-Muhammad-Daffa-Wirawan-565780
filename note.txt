@@ -1,0 +1,106 @@
+compile:
+g++ Main.cpp Interface.cpp Delivery.cpp System.cpp BuyingSystem/Products.cpp Account.cpp BuyingSystem/Processing.cpp
+
+fix bugs:
+username and password
+
+
+// worker.join();
+
+
+I have this file as a header file
+class GreenTech {
+public:
+    vector<Product> items {
+        {"Solar Panels", "High-efficiency solar panels for home energy.", 1200.0},
+        {"Home Wind Turbine", "Small wind turbine for household use.", 800.0},
+        {"Smart Thermostat", "AI thermostat saving up to 40% electricity.", 250.0},
+        {"Green AC", "Eco-friendly AC system.", 1500.0},
+        {"Smart Sprinklers", "Smart sprinklers that save up to 60% water.", 300.0}
+    };
+};
+
+class Drones {
+public:
+    vector<Product> items {
+        {"Camera Drone", "4K drone with stabilizer.", 600.0},
+        {"Military Drone", "Heavy-duty surveillance drone.", 2500.0},
+        {"Adventure Drone", "Durable drone for extreme travel.", 1200.0},
+        {"Winter Drone", "Cold-resistant drone.", 900.0},
+        {"Delivery Drone", "Autonomous delivery drone.", 2000.0}
+    };
+};
+
+class Books {
+public:
+    vector<Product> items {
+        {"Atomic Habits", "A book about building better habits.", 15.0},
+        {"Surrounded By Idiots", "Understanding personality types.", 20.0},
+        {"Think and Grow Rich", "Classic self-development book.", 18.0},
+        {"The Psychology of Money", "Money behavior explained.", 22.0},
+        {"The Intelligent Investor", "Investment principles.", 25.0}
+    };
+};
+
+class ClassyLaptops {
+public:
+    vector<Product> items {
+        {"Apple MacBook Pro", "High-performance laptop with M1 chip.", 2000.0},
+        {"HP Spectre x360", "Convertible laptop with touch screen.", 1500.0},
+        {"Dell XPS 13", "Compact and powerful laptop.", 1300.0},
+        {"Microsoft Surface Laptop", "Lightweight laptop with touch screen.", 1400.0},
+        {"Nokia Laptop", "High-efficiency laptop.", 700.0}
+    };
+};
+
+class Appliances {
+public:
+    vector<Product> items {
+        {"LED Light", "Energy-efficient LED light bulb.", 15.0},
+        {"Smart Refrigerator", "Energy-saving smart fridge.", 1200.0},
+        {"Microwave Oven", "Compact microwave oven.", 150.0},
+        {"Air Conditioner", "Energy-efficient air conditioner.", 500.0},
+        {"Washing Machine", "High-efficiency washing machine.", 700.0}
+    };
+};
+
+then I have the database in Header/users_data.txt that look like this
+Username: davecool	Full Name: dave cool	Password: davecold
+Cart: Solar Panels, Apple MacBook Pro
+totalItems: 2
+totalExpenses: 2800
+
+Username: weirdharry	Full Name: harry weird	Password: weirdharry
+Cart: Solar Panels, Atomic Habits
+totalItems: 2
+totalExpenses: 815
+
+in my products.cpp file I have
+vector<Product> cart;
+
+and a half piece of function to output user cart with price and total
+void viewCart() {
+    clear();
+    cout << "-----M.Menu----------------------------0.Exit()-----" << endl << endl;
+    cout << "========== YOUR CART ==========" << endl;
+
+    if(isLoggedIn) {
+        cout << "User: " << currentUser << "\n\n";
+
+        // if (cart.empty()) {
+        //     cout << "Your cart is empty. You have 0 items.\n\n";
+        // } else {
+        //     double total = 0;
+        //     for (int i = 0; i < cart.size(); i++) {
+        //         cout << i + 1 << ". " << cart[i].name << " - $" << cart[i].price << "\n";
+        //         total += cart[i].price;
+        //     }
+        //     cout << "------------------------------\n";
+        //     cout << "Total: $" << total << "\n\n";
+        // }
+
+    } else {
+        cout << "You're not logged in. Please log in to view your cart.\n\n";
+    }
+
+from here I want you to make the function work 
