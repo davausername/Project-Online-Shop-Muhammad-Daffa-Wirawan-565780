@@ -1,0 +1,25 @@
+compile:
+g++ Main.cpp Interface.cpp Delivery.cpp System.cpp BuyingSystem/Products.cpp Account.cpp BuyingSystem/Processing.cpp BuyingSystem/payment.cpp
+
+fix bugs:
+username and password
+
+
+// worker.join();
+
+
+Sign Up
+Our application provide registration for new user by inputting their information and their username. Once their enter their username, it will check to the database if the username already exist or not, if the username is completely new, then, it will proceed to the next stage. After done the registration, the system will bring user back to the menu and their username will be shown in the menu e.g. "Welcome, davewinter".
+
+Sign Up
+User need to be registered to sign them as the costumer. To do it, the user need to click the account, then click sign in, and enter their username and password. Once they've logged in, it will get back to the menu with their username shown in the menu and they can access all features in the app, e.g. buy stuff and track expenses.
+
+Account details
+The functionality of "account details" is to show user information like their full name, username, password, and how many items they've bough. To do it, they need to go to the account, click Account Details, and input what asked. After that, it will shows the user informations.
+
+remove account
+If user wanna remove their account from the database they can go to account -> remove account and input their username and password, once they've done that, their account will be removed.
+
+Cart
+
+Buy

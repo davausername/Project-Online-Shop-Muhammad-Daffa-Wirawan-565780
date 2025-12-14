@@ -1,0 +1,30 @@
+Username: motorbikecool	Full Name: harley davidson	Password: harleydavidson
+Cart: Dell XPS 13
+totalItems: 2
+totalExpenses: 2200
+
+Username: davewinter	Full Name: dave winter	Password: dave234winter
+Cart: 
+totalItems: 35
+totalExpenses: 49037
+
+Username: davewills	Full Name: dave wills	Password: dave2345
+Cart: Solar Panels, Solar Panels, Dell XPS 13
+totalItems: 1
+totalExpenses: 150
+
+Username: davecool	Full Name: dave cool	Password: davecold
+Cart: Solar Panels, Apple MacBook Pro
+totalItems: 2
+totalExpenses: 2800
+
+Username: weirdharry	Full Name: harry weird	Password: weirdharry
+Cart: 
+totalItems: 8
+totalExpenses: 10763
+
+Username: spongebob	Full Name: SpongeBob Squarepants	Password: squarepantsissquared
+Cart: 
+totalItems: 5
+totalExpenses: 51625
+
